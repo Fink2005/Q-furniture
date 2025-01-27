@@ -103,17 +103,17 @@ export default function page() {
                             key={index}
                             className="flex flex-col w-1/4 mx-8 hover:text-white group hover:bg-[#981b1e] transition-all duration-300 ease-in-out cursor-pointer"
                         >
-                            <div className="block relative min-h-[1px]">
+                            <div className="relative group">
                                 <Image
                                     src={card.image}
-                                    className="w-full block overflow-clip"
+                                    className="w-full"
                                     width={500}
                                     height={500}
                                     alt="Picture of the author"
                                 />
                                 <Image
                                     src="https://www.vietceramics.com/media/2630382/shcolar60-thumbnail.jpg"
-                                    className="w-full overflow-clip absolute top-0 left-0 block group-hover:translate-y-0 z-[1] translate-y-[-101%]"
+                                    className="w-full h-0 absolute top-0 left-0 group-hover:h-full transition-all duration-300 ease-in-out"
                                     width={500}
                                     height={500}
                                     alt="Picture of the author"
