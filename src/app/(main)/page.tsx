@@ -1,9 +1,16 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import BootBalance from "@/components/BootBalance";
+import CarouselPage from "@/components/CarouselPage";
+import CarouselProduct from "@/components/CarouselProduct";
+import Toilet from "@/components/Toilet";
 
 export default function Home() {
   return (
     <div>
-      <Button>xin chao</Button>
+      <CarouselPage />
+      <Toilet />
+      <BootBalance />
+      <CarouselProduct />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Footer = () => {
@@ -47,21 +49,25 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* Newsletter Section */}
-      <div className="text-center py-8">
-        <h3 className="text-xl font-semibold">Bản Tin Điện Tử</h3>
-        <p className="text-gray-400 mt-2">
-          Đăng ký để cập nhật thông tin mới nhất về khuyến mãi, sản phẩm và sự
-          kiện.
-        </p>
-        <div className="flex justify-center items-center mt-4">
-          <input
-            type="email"
-            placeholder="Nhập địa chỉ email của bạn"
-            className="p-2 w-72 rounded-l-md focus:outline-none text-gray-800"
-          />
-          <button className="bg-red-600 text-white px-4 rounded-r-md hover:bg-red-700">
-            &gt;
-          </button>
+      <div className="flex justify-center">
+        <div className="text-center py-8 lg:flex lg:h-32 lg:border-b w-full  lg:w-3/4 items-center">
+          <h3 className="text-xl font-semibold lg:w-1/4">Bản Tin Điện Tử</h3>
+          <p className="text-gray-400 lg:w-1/4 text-sm lg:text-left text-center py-3">
+            Đăng ký để cập nhật thông tin mới nhất về khuyến mãi, sản phẩm và sự
+            kiện.
+          </p>
+          <div className="flex justify-center items-center lg:w-1/2 h-[40px]">
+            <input
+              type="email"
+              placeholder="Nhập địa chỉ email của bạn"
+              className="p-2 w-96 rounded-l-md focus:outline-none text-gray-800 bg-black/30"
+            />
+            <div className="h-full">
+              <button className="bg-red-600 text-white px-4 rounded-r-sm hover:bg-red-700 h-full">
+                <FontAwesomeIcon className="w-3 h-3" icon={faChevronRight} />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
